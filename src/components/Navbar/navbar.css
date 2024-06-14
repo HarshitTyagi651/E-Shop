@@ -1,0 +1,153 @@
+.navbar{
+    width: 100%;
+    padding: 25px 0;
+    display: flex;
+    font-family: "Roboto Slab", serif;
+    justify-content: center;
+    box-shadow:  0 1px 3px -2px black;
+}
+
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    img{
+        width: 40px;
+        height: 40px;
+    }
+
+    p{
+        font-size: 30px;
+    }
+}
+
+.menu-hidden{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    width: 40%;
+    justify-content: space-between;
+
+    li{
+        font-size: 19px;
+        color: rgb(16, 16, 16);
+        text-decoration: none;
+
+        hr{
+            background-color: red;
+            margin-top: 5px;
+            height: 3px;
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+}
+
+.menu-open{
+    list-style: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.6rem;
+    padding: 10px 0;
+    right: 0;
+    width: 50%;
+    box-shadow: 0px 0px 0px 0px black;
+    top: 90px;
+    background-color: rgb(226, 226, 226);
+}
+.item:hover{
+    cursor: pointer;
+}
+
+.dropdown-toggle{
+    display: none;
+    border: none;
+    width: 40px;
+  }
+  
+  
+
+.login-cart{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    img{
+        width: 30px;
+        height: 30px;
+    }
+
+    img:hover{
+        cursor: pointer;
+    }
+
+    button{
+        border: 2px solid rgb(36, 36, 36);
+        padding: 6px 16px;
+        border-radius: 30px;
+        font-family: "Roboto Slab", serif;
+        color: rgb(67, 67, 67);
+        font-size: 17px;
+    }
+
+    button:hover{
+        cursor: pointer;
+    }
+}
+a:-webkit-any-link{
+    text-decoration: none;
+}
+
+.toggleBtnImg{
+    width: 30px;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+    .menu-hidden { /* Hide menu on small screens initially */
+      display: none;
+    }
+    .dropdown-toggle { /* Show toggle button on small screens */
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .logo>p{
+        font-size: 1.5rem;
+    }
+    .logo>img{
+        width: 25px;
+        height: 25px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .logo>p{
+        font-size: 1.3rem;
+    }
+    .logo>img{
+        width: 22px;
+        height: 22px;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .logo>p{
+        display: none;
+    }
+    .logo>img{
+        width: 27px;
+        height: 27px;
+    }
+  }
